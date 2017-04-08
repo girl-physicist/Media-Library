@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Interfaces
 {
-   public interface IVideoItem:IPlayableItem
+  public  interface IImageItem:IMediaItem
     {
-        Quality Quality { get; }
+      string  resolution { get; }
     }
 }
-

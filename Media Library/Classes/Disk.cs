@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Media_Library.Interfaces
+namespace Media_Library.Classes
 {
-    interface IImageItem1:IMediaItem
+    class Disk //Conteiner
     {
-      string  resolution { get; }
     }
 }

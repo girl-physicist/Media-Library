@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Interfaces
 {
-    interface IMediaItem
+   public interface IMediaItem
     {
         string Name { get; }
         string Author { get; }

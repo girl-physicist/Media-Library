@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Interfaces
 {
-    interface IAudioItem:IPlayableItem
+  public  interface IAudioItem:IPlayableItem
     {
        int Bitrate { get; }
        //bool LyricsAvailability { get; } 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Interfaces
 {
-    interface IPlayableItem:IMediaItem
+   public interface IPlayableItem:IMediaItem
     {
      TimeSpan Duration { get; }
     }

@@ -1,6 +1,6 @@
 ﻿namespace Media_Library.Interfaces
 {
-    enum Quality
+ public   enum Quality
     {
          Very_poor,
             //1.1 CAMRip
