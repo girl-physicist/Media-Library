@@ -8,6 +8,6 @@ namespace Media_Library.Interfaces
 {
     interface IImageItem1:IMediaItem
     {
-        
+      string  resolution { get; }
     }
 }
