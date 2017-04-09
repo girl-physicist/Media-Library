@@ -12,8 +12,9 @@ namespace Media_Library.Interfaces
         string Author { get; }
         string Genre { get; }
         int Size { get; }
-        DateTime DateOfCreation { get; }
+        int DateOfCreation { get; }
+       // DateTime DateOfCreation { get; }
         void OpenItem();
-        void GetTypeOfItem();
+        
     }
 }

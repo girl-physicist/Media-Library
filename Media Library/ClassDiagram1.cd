@@ -11,10 +11,9 @@
   <Class Name="Media_Library.Classes.Disk" Collapsed="true">
     <Position X="10.25" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAEAABAQAAAABAQAAAAAAAAEAAAAAABQIAA=</HashCode>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Disk.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Media_Library.Classes.History" Collapsed="true">
     <Position X="6.75" Y="3" Width="1.5" />
@@ -41,7 +40,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Media_Library.Classes.Video" Collapsed="true">
-    <Position X="7.5" Y="1.75" Width="1.5" />
+    <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Video.cs</FileName>
@@ -51,7 +50,7 @@
   <Class Name="Media_Library.Classes.MediaItem" Collapsed="true">
     <Position X="5.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAAAAAAIAAgAAAgAIAAQQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AABAAAAAAAAAgAAAgAIAAQQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\MediaItem.cs</FileName>
       <NewMemberFileName>Classes\Audio.cs</NewMemberFileName>
     </TypeIdentifier>
@@ -74,7 +73,7 @@
   <Interface Name="Media_Library.Interfaces.IMediaItem" Collapsed="true">
     <Position X="2" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAAAAAAIAAgAAAgAIAAQQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AABAAAAAAAAAgAAAgAIAAQQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IMediaItem.cs</FileName>
     </TypeIdentifier>
   </Interface>

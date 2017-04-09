@@ -8,6 +8,7 @@ namespace Media_Library.Interfaces
 {
    public interface IPlayableItem:IMediaItem
     {
-     TimeSpan Duration { get; }
+       Double Duration { get; }
+   // TimeSpan Duration { get; }
     }
 }

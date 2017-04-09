@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Media_Library.Interfaces;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,82 +8,32 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-    class Disk : ICollection<Audio>
+    class Disk:MediaItem //, IAudioItem,IImageItem
     {
-        public int Count
+        //public int Bitrate
+        //{
+        //    get;
+        //}
+        //public TimeSpan Duration
+        //{
+        //    get;
+        //}
+        //public string Resolution
+        //{
+        //    get;
+        //}
+        public ICollection<IMediaItem> Items
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get;
+            protected set;
         }
-
-        public bool IsReadOnly
+        public Disk(string author, int dateOfCreation, string genre, string name, int size, 
+            ICollection<IMediaItem> items) : base(author, dateOfCreation, genre, name, size)
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public void Add(Audio item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Add(MediaItem item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Clear()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Contains(Audio item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Contains(MediaItem item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void CopyTo(Audio[] array, int arrayIndex)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void CopyTo(MediaItem[] array, int arrayIndex)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerator<MediaItem> GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Remove(Audio item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Remove(MediaItem item)
-        {
-            throw new NotImplementedException();
-        }
-
-        IEnumerator<Audio> IEnumerable<Audio>.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            throw new NotImplementedException();
+            //Bitrate = bitrate;
+            //Duration = duration;
+            //Resolution = resolution;
+            Items = items;
         }
     }
 }
