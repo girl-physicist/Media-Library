@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-    class Disk : ICollection<MediaItem>
+    class History : ICollection<MediaItem>
     {
         public int Count
         {
@@ -61,4 +61,3 @@ namespace Media_Library.Classes
         }
     }
 }
- 

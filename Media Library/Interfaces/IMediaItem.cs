@@ -11,7 +11,6 @@ namespace Media_Library.Interfaces
         string Name { get; }
         string Author { get; }
         string Genre { get; }
-        int Id     { get; }
         int Size { get; }
         DateTime DateOfCreation { get; }
     }

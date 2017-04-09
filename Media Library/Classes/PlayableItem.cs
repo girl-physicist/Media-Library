@@ -7,62 +7,15 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-   public abstract class PlayableItem : IPlayableItem
+   public  class PlayableItem :MediaItem, IPlayableItem
     {
-        public string Author
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public DateTime DateOfCreation
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
-
         public TimeSpan Duration
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get;
         }
-
-        public string Genre
+       public PlayableItem(string author, DateTime dateOfCreation, string genre, string name, int size, TimeSpan duration) : base(author, dateOfCreation, genre, name, size)
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public int Id
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public string Name
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public int Size
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            Duration = duration;
         }
     }
 }

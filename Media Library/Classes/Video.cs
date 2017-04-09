@@ -11,10 +11,11 @@ namespace Media_Library.Classes
     {
         public Quality Quality
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get;
+        }
+        public Video(string author, DateTime dateOfCreation, string genre, string name, int size, TimeSpan duration, Quality quality) : base(author, dateOfCreation, genre, name, size, duration)
+        {
+            Quality = quality;
         }
     }
 }

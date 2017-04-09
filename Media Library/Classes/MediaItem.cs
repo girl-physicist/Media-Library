@@ -8,43 +8,36 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-    public abstract class MediaItem : IMediaItem
+    public  class MediaItem : IMediaItem
     {
         public string Author
         {
             get;
-            protected set;
         }
 
         public DateTime DateOfCreation
         {
             get;
-            protected set;
         }
-
         public string Genre
         {
             get;
-            protected set;
         }
-
-        public int Id
-        {
-            get;
-            protected set;
-        }
-
         public string Name
         {
             get;
-            protected set;
         }
-
         public int Size
         {
             get;
-            protected set;
         }
-      
+        public  MediaItem(string author, DateTime dateOfCreation, string genre, string name, int size)
+        {
+            Author = author;
+            DateOfCreation = dateOfCreation;
+            Genre = genre;
+            Name = name;
+            Size = size;
+        }
     }
 }

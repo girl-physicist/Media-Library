@@ -14,13 +14,15 @@ Compilation =========== подборка (как диск только с воз
 /////////
 Name - у всех
 DateOfCreation - у всех
-Rating - только у фильмов
+Quality - только у фильмов
 Author - у всех
 Genre - у всех
 Duration - только аудио и видео
 Id - у всех
 AlbumArt - Disk, Serial, Compilation
-
+Size - у всех
+Bitrate - только у аудио
+Lyrics - только у аудио
 
 Остальные требования:
 

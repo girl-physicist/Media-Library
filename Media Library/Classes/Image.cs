@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-    class Image : MediaItem, IImageItem
+  public  class Image : MediaItem, IImageItem
     {
-        public string resolution
+        public string Resolution
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get;
+        }
+        public Image(string author, DateTime dateOfCreation, string genre, string name, int size, string resolution) : base(author, dateOfCreation, genre, name, size)
+        {
+            Resolution = resolution;
         }
     }
 }

@@ -9,6 +9,5 @@ namespace Media_Library.Interfaces
   public  interface IAudioItem:IPlayableItem
     {
        int Bitrate { get; }
-       //bool LyricsAvailability { get; } 
     }
 }
