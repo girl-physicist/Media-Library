@@ -1,23 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Media_Library.Classes.MediaItem" Collapsed="true">
-    <Position X="6" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAgAIAAQQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\MediaItem.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Media_Library.Classes.Audio" Collapsed="true">
-    <Position X="5" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
-      <FileName>Classes\Audio.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
   <Class Name="Media_Library.Classes.Compilation" Collapsed="true">
-    <Position X="12" Y="0.5" Width="1.5" />
+    <Position X="5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAABAQAAAABAQAAAAAAAAEAAAAAABQIAA=</HashCode>
       <FileName>Classes\Compilation.cs</FileName>
@@ -25,15 +9,15 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Media_Library.Classes.Disk" Collapsed="true">
-    <Position X="12" Y="2.75" Width="1.5" />
+    <Position X="10.25" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAABAQAAAABAQAAAAAAAAEAAAAAABQIAA=</HashCode>
+      <HashCode>AAIAAAAAAAEAABAQAAAABAQAAAAAAAAEAAAAAABQIAA=</HashCode>
       <FileName>Classes\Disk.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Media_Library.Classes.History" Collapsed="true">
-    <Position X="12" Y="1.25" Width="1.5" />
+    <Position X="6.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAABAQAAAABAQAAAAAAAAEAAAAAABQIAA=</HashCode>
       <FileName>Classes\History.cs</FileName>
@@ -41,7 +25,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Media_Library.Classes.Image" Collapsed="true">
-    <Position X="9.25" Y="0.5" Width="1.5" />
+    <Position X="9.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Image.cs</FileName>
@@ -49,7 +33,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Media_Library.Classes.Serial" Collapsed="true">
-    <Position X="12" Y="2" Width="1.5" />
+    <Position X="8.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAABAQAAAABAQAAAAAAAAEAAAAAABQIAA=</HashCode>
       <FileName>Classes\Serial.cs</FileName>
@@ -57,18 +41,19 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Media_Library.Classes.Video" Collapsed="true">
-    <Position X="7" Y="2.75" Width="1.5" />
+    <Position X="7.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Video.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Media_Library.Classes.PlayableItem" Collapsed="true">
-    <Position X="6" Y="1.5" Width="1.5" />
+  <Class Name="Media_Library.Classes.MediaItem" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\PlayableItem.cs</FileName>
+      <HashCode>AABAAAAAAIAAgAAAgAIAAQQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\MediaItem.cs</FileName>
+      <NewMemberFileName>Classes\Audio.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -89,7 +74,7 @@
   <Interface Name="Media_Library.Interfaces.IMediaItem" Collapsed="true">
     <Position X="2" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAgAIAAQQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AABAAAAAAIAAgAAAgAIAAQQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IMediaItem.cs</FileName>
     </TypeIdentifier>
   </Interface>

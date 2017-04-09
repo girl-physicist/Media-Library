@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-    class Disk : ICollection<MediaItem>
+    class Disk : ICollection<Audio>
     {
         public int Count
         {
@@ -25,6 +25,11 @@ namespace Media_Library.Classes
             }
         }
 
+        public void Add(Audio item)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Add(MediaItem item)
         {
             throw new NotImplementedException();
@@ -35,7 +40,17 @@ namespace Media_Library.Classes
             throw new NotImplementedException();
         }
 
+        public bool Contains(Audio item)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool Contains(MediaItem item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CopyTo(Audio[] array, int arrayIndex)
         {
             throw new NotImplementedException();
         }
@@ -50,7 +65,17 @@ namespace Media_Library.Classes
             throw new NotImplementedException();
         }
 
+        public bool Remove(Audio item)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool Remove(MediaItem item)
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerator<Audio> IEnumerable<Audio>.GetEnumerator()
         {
             throw new NotImplementedException();
         }

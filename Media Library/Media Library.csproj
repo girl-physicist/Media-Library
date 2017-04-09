@@ -49,7 +49,6 @@
     <Compile Include="Classes\History.cs" />
     <Compile Include="Classes\Image.cs" />
     <Compile Include="Classes\MediaItem.cs" />
-    <Compile Include="Classes\PlayableItem.cs" />
     <Compile Include="Classes\Serial.cs" />
     <Compile Include="Classes\Video.cs" />
     <Compile Include="Interfaces\IAudioItem.cs" />

@@ -13,5 +13,7 @@ namespace Media_Library.Interfaces
         string Genre { get; }
         int Size { get; }
         DateTime DateOfCreation { get; }
+        void OpenItem();
+        void GetTypeOfItem();
     }
 }

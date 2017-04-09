@@ -39,5 +39,15 @@ namespace Media_Library.Classes
             Name = name;
             Size = size;
         }
+
+        public void OpenItem()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GetTypeOfItem()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
