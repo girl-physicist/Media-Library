@@ -15,7 +15,7 @@ namespace Media_Library.Classes
             get;
         }
 
-        public int DateOfCreation
+        public DateTime DateOfCreation
         {
             get;
         }
@@ -31,7 +31,7 @@ namespace Media_Library.Classes
         {
             get;
         }
-        public  MediaItem(string author, int dateOfCreation, string genre, string name, int size)
+        public  MediaItem(string author, DateTime dateOfCreation, string genre, string name, int size)
         {
             Author = author;
             DateOfCreation = dateOfCreation;

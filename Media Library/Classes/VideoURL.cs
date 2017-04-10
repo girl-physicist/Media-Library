@@ -13,7 +13,7 @@ namespace Media_Library.Classes
         {
             get;
         }
-        public VideoURL(string author, int dateOfCreation, string genre, string name, int size, double duration, 
+        public VideoURL(string author, DateTime dateOfCreation, string genre, string name, int size, TimeSpan duration, 
             Quality quality,string url) : base(author, dateOfCreation, genre, name, size, duration, quality)
         {
             URL = url;

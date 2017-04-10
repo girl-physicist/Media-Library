@@ -13,7 +13,7 @@ namespace Media_Library.Classes
         {
             get;
         }
-        public ImageURL(string author, int dateOfCreation, string genre, string name, int size, string resolution,string url) : base(author, dateOfCreation, genre, name, size, resolution)
+        public ImageURL(string author, DateTime dateOfCreation, string genre, string name, int size, string resolution,string url) : base(author, dateOfCreation, genre, name, size, resolution)
         {
             URL = url;
         }

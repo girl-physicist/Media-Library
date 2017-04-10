@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-   public class Disk: ICollection<IMediaItem>
+   public class Disk:IGroup, ICollection<IMediaItem>
     {
         private ICollection<IMediaItem> mediaItems = new List<IMediaItem>();
 
@@ -26,6 +26,16 @@ namespace Media_Library.Classes
             {
                 return mediaItems.IsReadOnly;
             }
+        }
+
+        public string Name
+        {
+            get;
+        }
+
+        public DateTime DateOfCreation
+        {
+            get;
         }
 
         public void Add(IMediaItem item)
@@ -68,6 +78,12 @@ namespace Media_Library.Classes
         IEnumerator IEnumerable.GetEnumerator()
         {
             return mediaItems.GetEnumerator();
+        }
+     
+        public Disk(string name, DateTime dateOfCreation)
+        {
+            Name = name;
+            DateOfCreation = dateOfCreation;
         }
     }
 }

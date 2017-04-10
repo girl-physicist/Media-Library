@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Interfaces
 {
-   public interface IPlayableItem:IMediaItem
+    interface IGroup
     {
-     
-   TimeSpan Duration { get; }
+        string Name { get; }
+        DateTime DateOfCreation { get; }
     }
 }

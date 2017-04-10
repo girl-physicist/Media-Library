@@ -14,12 +14,12 @@ namespace Media_Library.Classes
             get;
         }
 
-        public double Duration
+        public TimeSpan Duration
         {
             get;
         }
 
-        public Video(string author, int dateOfCreation, string genre, string name, int size, double duration, Quality quality) : base(author, dateOfCreation, genre, name, size)
+        public Video(string author, DateTime dateOfCreation, string genre, string name, int size, TimeSpan duration, Quality quality) : base(author, dateOfCreation, genre, name, size)
         {
             Quality = quality;
             Duration = duration;

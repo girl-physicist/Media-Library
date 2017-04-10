@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-  public  class Serial : ICollection<IMediaItem>
+  public  class Serial : IGroup, ICollection<IMediaItem>
     {
         private ICollection<IMediaItem> mediaItems = new List<IMediaItem>();
 
@@ -20,12 +20,22 @@ namespace Media_Library.Classes
             }
         }
 
+        public DateTime DateOfCreation
+        {
+            get;
+        }
+
         public bool IsReadOnly
         {
             get
             {
                 return mediaItems.IsReadOnly;
             }
+        }
+
+        public string Name
+        {
+            get;
         }
 
         public void Add(IMediaItem item)
@@ -65,6 +75,11 @@ namespace Media_Library.Classes
         IEnumerator IEnumerable.GetEnumerator()
         {
             return mediaItems.GetEnumerator();
+        }
+        public Serial (string name, DateTime dateOfCreation)
+        {
+            Name = name;
+            DateOfCreation = dateOfCreation;
         }
     }
 }

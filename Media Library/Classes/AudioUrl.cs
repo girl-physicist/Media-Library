@@ -13,8 +13,8 @@ namespace Media_Library.Classes
         {
             get;
         }
-        public AudioUrl(string author, int dateOfCreation, string genre, string name, int size, 
-            double duration, int bitrate,string url) : base(author, dateOfCreation, genre, name, size, duration, bitrate)
+        public AudioUrl(string author, DateTime dateOfCreation, string genre, string name, int size, 
+            TimeSpan duration, int bitrate,string url) : base(author, dateOfCreation, genre, name, size, duration, bitrate)
         {
             URL = url;
         }

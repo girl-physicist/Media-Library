@@ -13,7 +13,7 @@ namespace Media_Library.Classes
         {
             get;
         }
-        public Image(string author, int dateOfCreation, string genre, string name, int size, string resolution) : base(author, dateOfCreation, genre, name, size)
+        public Image(string author, DateTime dateOfCreation, string genre, string name, int size, string resolution) : base(author, dateOfCreation, genre, name, size)
         {
             Resolution = resolution;
         }
