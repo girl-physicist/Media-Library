@@ -24,5 +24,7 @@ namespace Media_Library.Classes
             Quality = quality;
             Duration = duration;
         }
+
+       
     }
 }

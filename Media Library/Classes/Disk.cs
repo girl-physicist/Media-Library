@@ -8,32 +8,66 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-    class Disk:MediaItem //, IAudioItem,IImageItem
+   public class Disk: ICollection<IMediaItem>
     {
-        //public int Bitrate
-        //{
-        //    get;
-        //}
-        //public TimeSpan Duration
-        //{
-        //    get;
-        //}
-        //public string Resolution
-        //{
-        //    get;
-        //}
-        public ICollection<IMediaItem> Items
+        private ICollection<IMediaItem> mediaItems = new List<IMediaItem>();
+
+        public int Count
         {
-            get;
-            protected set;
+            get
+            {
+                return mediaItems.Count;
+            }
         }
-        public Disk(string author, int dateOfCreation, string genre, string name, int size, 
-            ICollection<IMediaItem> items) : base(author, dateOfCreation, genre, name, size)
+
+        public bool IsReadOnly
         {
-            //Bitrate = bitrate;
-            //Duration = duration;
-            //Resolution = resolution;
-            Items = items;
+            get
+            {
+                return mediaItems.IsReadOnly;
+            }
+        }
+
+        public void Add(IMediaItem item)
+        {
+            // mediaItems.Add(item);
+            if (item is Audio || item is Image)
+            { mediaItems.Add(item); }
+            else
+            {
+                throw new InvalidOperationException("Disk can only consist of Audio and Image");
+                // обработка исключения
+            }
+        }
+
+        public void Clear()
+        {
+            mediaItems.Clear();
+        }
+
+        public bool Contains(IMediaItem item)
+        {
+            return mediaItems.Contains(item);
+        }
+
+        public void CopyTo(IMediaItem[] array, int arrayIndex)
+        {
+            mediaItems.CopyTo(array, arrayIndex);
+        }
+
+        public IEnumerator<IMediaItem> GetEnumerator()
+        {
+            return mediaItems.GetEnumerator();
+        }
+
+        public bool Remove(IMediaItem item)
+        {
+            return mediaItems.Remove(item);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return mediaItems.GetEnumerator();
         }
     }
 }

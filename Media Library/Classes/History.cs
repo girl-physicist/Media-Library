@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Media_Library.Interfaces;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,13 +8,15 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-    class History : ICollection<MediaItem>
+    public class History : ICollection<IMediaItem>
     {
+        private ICollection<IMediaItem> mediaItems = new List<IMediaItem>();
+
         public int Count
         {
             get
             {
-                throw new NotImplementedException();
+                return mediaItems.Count;
             }
         }
 
@@ -21,43 +24,47 @@ namespace Media_Library.Classes
         {
             get
             {
-                throw new NotImplementedException();
+                return mediaItems.IsReadOnly;
             }
         }
 
-        public void Add(MediaItem item)
+        public void Add(IMediaItem item) 
         {
-            throw new NotImplementedException();
+            //  mediaItems.Add(item);
+            if (item is Video || item is Image|| item is VideoURL || item is ImageURL)
+            { mediaItems.Add(item); }
+            else
+            { throw new InvalidOperationException("History can only consist of Video(VideoURL) and Image(ImageURL)"); }
         }
 
         public void Clear()
         {
-            throw new NotImplementedException();
+            mediaItems.Clear();
         }
 
-        public bool Contains(MediaItem item)
+        public bool Contains(IMediaItem item)
         {
-            throw new NotImplementedException();
+            return mediaItems.Contains(item);
         }
 
-        public void CopyTo(MediaItem[] array, int arrayIndex)
+        public void CopyTo(IMediaItem[] array, int arrayIndex)
         {
-            throw new NotImplementedException();
+            mediaItems.CopyTo(array, arrayIndex);
         }
 
-        public IEnumerator<MediaItem> GetEnumerator()
+        public IEnumerator<IMediaItem> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return mediaItems.GetEnumerator();
         }
 
-        public bool Remove(MediaItem item)
+        public bool Remove(IMediaItem item)
         {
-            throw new NotImplementedException();
+            return mediaItems.Remove(item);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            return mediaItems.GetEnumerator();
         }
     }
 }

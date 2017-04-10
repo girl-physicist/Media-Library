@@ -34,13 +34,13 @@
   <Class Name="Media_Library.Classes.Serial" Collapsed="true">
     <Position X="8.5" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAABAQAAAABAQAAAAAAAAEAAAAAABQIAA=</HashCode>
+      <HashCode>AAIAAEAAAAAAABAQAAAABAQAAAAAAAAEAAAAAABQIAA=</HashCode>
       <FileName>Classes\Serial.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Media_Library.Classes.Video" Collapsed="true">
-    <Position X="6.25" Y="0.5" Width="1.5" />
+    <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Video.cs</FileName>
@@ -56,8 +56,40 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="Media_Library.Classes.Audio" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Classes\Audio.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Media_Library.Classes.AudioUrl" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\AudioUrl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Media_Library.Classes.ImageURL" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\ImageURL.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Media_Library.Classes.VideoURL" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\VideoURL.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Interface Name="Media_Library.Interfaces.IAudioItem" Collapsed="true">
-    <Position X="1.25" Y="2.25" Width="1.5" />
+    <Position X="0.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Interfaces\IAudioItem.cs</FileName>
@@ -78,17 +110,24 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="Media_Library.Interfaces.IPlayableItem" Collapsed="true">
-    <Position X="1.25" Y="1.25" Width="1.5" />
+    <Position X="0.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IPlayableItem.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Media_Library.Interfaces.IVideoItem" Collapsed="true">
-    <Position X="3" Y="2.25" Width="1.5" />
+    <Position X="2.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IVideoItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Media_Library.Interfaces.IHaveURL" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IHaveURL.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="Media_Library.Interfaces.Quality" Collapsed="true">
