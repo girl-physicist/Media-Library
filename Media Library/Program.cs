@@ -41,6 +41,7 @@ namespace Media_Library
             comp.Add(sing);
             comp.Add(photo);
             comp.Add(sing1); //Error
+            Console.ReadKey();
         }
     }
 }

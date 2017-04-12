@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-  public  class Serial : Group
+    public class Serial : Group
     {
         public Serial(string name, DateTime dateOfCreation) : base(name, dateOfCreation)
         {
@@ -18,12 +18,17 @@ namespace Media_Library.Classes
         {
             // mediaItems.Add(item);
             if (item is Video || item is Image)
-            { mediaItems.Add(item); }
+            { mediaItems.Add(item);
+                Console.WriteLine("item " + item.Name + " has been added.");
+            }
             else
-            { Console.WriteLine("Serial can only consist of Video and Image");
+            {
+                Console.WriteLine("item " + item.Name + " has not been added. Serial can only consist of Video and Image");
+                
                 //throw new InvalidOperationException("Serial can only consist of Video and Image"); }
-        }
+            }
 
-        
+
+        }
     }
 }

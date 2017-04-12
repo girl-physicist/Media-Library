@@ -8,78 +8,27 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-    public class History :IGroup, ICollection<IMediaItem>
+    public class History : Group
     {
-        private ICollection<IMediaItem> mediaItems = new List<IMediaItem>();
-
-        public int Count
+        public History(string name, DateTime dateOfCreation) : base(name, dateOfCreation)
         {
-            get
-            {
-                return mediaItems.Count;
-            }
         }
 
-        public DateTime DateOfCreation
-        {
-            get;
-        }
-
-        public bool IsReadOnly
-        {
-            get
-            {
-                return mediaItems.IsReadOnly;
-            }
-        }
-
-        public string Name
-        {
-            get;
-        }
-
-        public void Add(IMediaItem item) 
+        public new void Add(IMediaItem item)
         {
             //  mediaItems.Add(item);
-            if (item is Video || item is Image|| item is VideoURL || item is ImageURL)
-            { mediaItems.Add(item); }
+            if (item is Video || item is Image || item is VideoURL || item is ImageURL)
+            { mediaItems.Add(item);
+             Console.WriteLine("item "+item.Name+" has been added.");
+            }
             else
-            { throw new InvalidOperationException("History can only consist of Video(VideoURL) and Image(ImageURL)"); }
-        }
+            {
+                Console.WriteLine("item " + item.Name + " has not been added. History can only consist of Video(VideoURL) and Image(ImageURL)");
+              
+                //throw new InvalidOperationException("History can only consist of Video(VideoURL) and Image(ImageURL)"); }
+            }
 
-        public void Clear()
-        {
-            mediaItems.Clear();
-        }
 
-        public bool Contains(IMediaItem item)
-        {
-            return mediaItems.Contains(item);
-        }
-
-        public void CopyTo(IMediaItem[] array, int arrayIndex)
-        {
-            mediaItems.CopyTo(array, arrayIndex);
-        }
-
-        public IEnumerator<IMediaItem> GetEnumerator()
-        {
-            return mediaItems.GetEnumerator();
-        }
-
-        public bool Remove(IMediaItem item)
-        {
-            return mediaItems.Remove(item);
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return mediaItems.GetEnumerator();
-        }
-        public History(string name, DateTime dateOfCreation)
-        {
-            Name = name;
-            DateOfCreation = dateOfCreation;
         }
     }
 }

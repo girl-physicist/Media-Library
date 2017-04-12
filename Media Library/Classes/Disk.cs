@@ -17,10 +17,13 @@ namespace Media_Library.Classes
         public new void Add(IMediaItem item)
         {
             if (item is Audio || item is Image)
-            { mediaItems.Add(item); }
+            { mediaItems.Add(item);
+                Console.WriteLine("item " + item.Name + " has been added.");
+            }
             else
             {
-                Console.WriteLine("Disk can only consist of Audio and Image");
+                Console.WriteLine("item " + item.Name + " has not been added. Disk can only consist of Audio and Image");
+               
                 //throw new InvalidOperationException("Disk can only consist of Audio and Image");
                 // обработка исключения
             }
