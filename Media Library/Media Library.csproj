@@ -47,6 +47,7 @@
     <Compile Include="Classes\AudioUrl.cs" />
     <Compile Include="Classes\Compilation.cs" />
     <Compile Include="Classes\Disk.cs" />
+    <Compile Include="Classes\Group.cs" />
     <Compile Include="Classes\History.cs" />
     <Compile Include="Classes\Image.cs" />
     <Compile Include="Classes\ImageURL.cs" />

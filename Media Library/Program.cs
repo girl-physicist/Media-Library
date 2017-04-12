@@ -18,8 +18,8 @@ namespace Media_Library
             AudioUrl sing1 = new AudioUrl("Scorpions", new DateTime(1990), "Classic rok", "Wind of Change", 4970250, new TimeSpan(0, 5, 10), 320, "http://mmm");
             ImageURL photo1 = new ImageURL("Unknown", new DateTime(1990), "AlbumArt", "Scorpions", 65536, "500x500", "http://mmm");
             VideoURL clip1 = new VideoURL("Scorpions", new DateTime(1990), "Classic rok", "Wind of Change", 555, new TimeSpan(0, 5, 10), Quality.Best, "http://mmm");
-           
-            
+
+
             Disk disk = new Disk("MyDisk", DateTime.Now);
             disk.Add(sing);
             disk.Add(photo);

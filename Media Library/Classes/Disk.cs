@@ -8,83 +8,24 @@ using System.Threading.Tasks;
 
 namespace Media_Library.Classes
 {
-   public class Disk:IGroup, ICollection<IMediaItem>
+   public class Disk:Group
     {
-        private ICollection<IMediaItem> mediaItems = new List<IMediaItem>();
-
-        public int Count
+        public Disk(string name, DateTime dateOfCreation) : base(name, dateOfCreation)
         {
-            get
-            {
-                return mediaItems.Count;
-            }
         }
 
-        public bool IsReadOnly
+        public new void Add(IMediaItem item)
         {
-            get
-            {
-                return mediaItems.IsReadOnly;
-            }
-        }
-
-        public string Name
-        {
-            get;
-        }
-
-        public DateTime DateOfCreation
-        {
-            get;
-        }
-
-        public void Add(IMediaItem item)
-        {
-            // mediaItems.Add(item);
             if (item is Audio || item is Image)
             { mediaItems.Add(item); }
             else
             {
-                throw new InvalidOperationException("Disk can only consist of Audio and Image");
+                Console.WriteLine("Disk can only consist of Audio and Image");
+                //throw new InvalidOperationException("Disk can only consist of Audio and Image");
                 // обработка исключения
             }
         }
-
-        public void Clear()
-        {
-            mediaItems.Clear();
-        }
-
-        public bool Contains(IMediaItem item)
-        {
-            return mediaItems.Contains(item);
-        }
-
-        public void CopyTo(IMediaItem[] array, int arrayIndex)
-        {
-            mediaItems.CopyTo(array, arrayIndex);
-        }
-
-        public IEnumerator<IMediaItem> GetEnumerator()
-        {
-            return mediaItems.GetEnumerator();
-        }
-
-        public bool Remove(IMediaItem item)
-        {
-            return mediaItems.Remove(item);
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return mediaItems.GetEnumerator();
-        }
-     
-        public Disk(string name, DateTime dateOfCreation)
-        {
-            Name = name;
-            DateOfCreation = dateOfCreation;
-        }
+      
     }
 }
  
