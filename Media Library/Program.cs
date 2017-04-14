@@ -25,9 +25,9 @@ namespace Media_Library
             disk.Add(photo);
             disk.Add(clip); // Error
 
-            Serial serial = new Serial("MySerial",DateTime.Now);
+            Serial serial = new Serial("MySerial", DateTime.Now);
             serial.Add(new Video("Scorpions", new DateTime(1990), "Classic rok", "Wind of Change", 555, new TimeSpan(0, 5, 10), Quality.Best));
-            serial.Add( new Image("Unknown", new DateTime(1990), "AlbumArt", "Scorpions", 65536, "500x500"));
+            serial.Add(new Image("Unknown", new DateTime(1990), "AlbumArt", "Scorpions", 65536, "500x500"));
             serial.Add(new Audio("Scorpions", new DateTime(1990), "Classic rok", "Wind of Change", 4970250, new TimeSpan(0, 5, 10), 320)); // Error
 
             History history = new History("MyHistory", DateTime.Now);
@@ -36,11 +36,20 @@ namespace Media_Library
             history.Add(clip);
             history.Add(clip1);
             history.Add(sing); // Error
-            
+
             Compilation comp = new Compilation("MyCompilation", DateTime.Now);
             comp.Add(sing);
             comp.Add(photo);
             comp.Add(sing1); //Error
+           foreach (var i in comp)
+                {
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine(i.OpenItem());
+            }
+
+            Console.ForegroundColor = ConsoleColor.White;
+           // Console.WriteLine( history.OpenItem());
+            
             Console.ReadKey();
         }
     }

@@ -17,5 +17,14 @@ namespace Media_Library.Classes
         {
             Resolution = resolution;
         }
+
+
+
+
+       
+        public new Tuple<string, string, string, int, DateTime, string> OpenItem()
+        {
+            return Tuple.Create(Name, Author, Genre, Size, DateOfCreation, Resolution);
+        }
     }
 }

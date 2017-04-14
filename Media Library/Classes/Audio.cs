@@ -26,5 +26,10 @@ namespace Media_Library.Classes
             Duration = duration;
             Bitrate = bitrate;
         }
+        public new Tuple<string, string, string, int, DateTime, TimeSpan, int> OpenItem()
+        {
+            return Tuple.Create(Name, Author, Genre, Size, DateOfCreation, Duration, Bitrate);
+        }
+
     }
 }

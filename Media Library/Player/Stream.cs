@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Media_Library.Interfaces
+namespace Media_Library.Player
 {
-    interface IGroup:IMediaItem
+    class Stream
     {
-        
     }
 }

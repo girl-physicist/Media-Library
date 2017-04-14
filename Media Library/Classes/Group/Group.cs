@@ -10,11 +10,9 @@ namespace Media_Library.Classes
 {
     public class Group : IGroup, ICollection<IMediaItem>
     {
-       public ICollection<IMediaItem> mediaItems = new List<IMediaItem>();
-
-       
-       
-        public DateTime DateOfCreation
+       private static ICollection<IMediaItem> mediaItems = new List<IMediaItem>();
+       public ICollection<IMediaItem> p = mediaItems;
+       public DateTime DateOfCreation
         {
             get;
         }
@@ -39,6 +37,31 @@ namespace Media_Library.Classes
                 return mediaItems.IsReadOnly;
             }
         }
+
+        public string Author
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public string Genre
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public int Size
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public void Add(IMediaItem item)
         {
             mediaItems.Add(item);
@@ -73,6 +96,19 @@ namespace Media_Library.Classes
         {
             return mediaItems.GetEnumerator();
         }
+
+       
+
+        Tuple<string, string, string, int, DateTime> IMediaItem.OpenItem()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Tuple<string, DateTime> OpenItem()
+        {
+            return Tuple.Create(Name, DateOfCreation);
+        }
+
         public Group(string name, DateTime dateOfCreation)
         {
             Name = name;

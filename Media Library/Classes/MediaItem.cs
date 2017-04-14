@@ -40,9 +40,9 @@ namespace Media_Library.Classes
             Size = size;
         }
 
-        public void OpenItem()
+        public Tuple<string, string, string, int, DateTime> OpenItem()
         {
-            throw new NotImplementedException();
+            return Tuple.Create(Name,Author, Genre, Size, DateOfCreation);
         }
 
       

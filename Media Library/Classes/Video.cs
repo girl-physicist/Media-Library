@@ -24,7 +24,10 @@ namespace Media_Library.Classes
             Quality = quality;
             Duration = duration;
         }
+        public new Tuple<string, string, string, int, DateTime, TimeSpan, Quality> OpenItem()
+        {
+            return Tuple.Create(Name, Author, Genre, Size, DateOfCreation, Duration, Quality);
+        }
 
-       
     }
 }

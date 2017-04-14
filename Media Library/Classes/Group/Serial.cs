@@ -18,7 +18,7 @@ namespace Media_Library.Classes
         {
             // mediaItems.Add(item);
             if (item is Video || item is Image)
-            { mediaItems.Add(item);
+            { p.Add(item);
                 Console.WriteLine("item " + item.Name + " has been added.");
             }
             else

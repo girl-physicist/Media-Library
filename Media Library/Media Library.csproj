@@ -45,14 +45,14 @@
   <ItemGroup>
     <Compile Include="Classes\Audio.cs" />
     <Compile Include="Classes\AudioUrl.cs" />
-    <Compile Include="Classes\Compilation.cs" />
-    <Compile Include="Classes\Disk.cs" />
-    <Compile Include="Classes\Group.cs" />
-    <Compile Include="Classes\History.cs" />
+    <Compile Include="Classes\Group\Compilation.cs" />
+    <Compile Include="Classes\Group\Disk.cs" />
+    <Compile Include="Classes\Group\Group.cs" />
+    <Compile Include="Classes\Group\History.cs" />
     <Compile Include="Classes\Image.cs" />
     <Compile Include="Classes\ImageURL.cs" />
     <Compile Include="Classes\MediaItem.cs" />
-    <Compile Include="Classes\Serial.cs" />
+    <Compile Include="Classes\Group\Serial.cs" />
     <Compile Include="Classes\Video.cs" />
     <Compile Include="Classes\VideoURL.cs" />
     <Compile Include="Interfaces\IAudioItem.cs" />
@@ -63,6 +63,8 @@
     <Compile Include="Interfaces\IPlayableItem.cs" />
     <Compile Include="Interfaces\IVideoItem.cs" />
     <Compile Include="Interfaces\Quality.cs" />
+    <Compile Include="Player\player.cs" />
+    <Compile Include="Player\Stream.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
